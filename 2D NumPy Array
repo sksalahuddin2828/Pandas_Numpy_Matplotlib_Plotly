@@ -1,0 +1,26 @@
+# Apply a function on each value of a 2D NumPy Array (vectorize)
+
+import numpy as np
+
+level = np.array([
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+])
+
+def calculate(value):
+    if value%2==0:
+        value="Even"
+    else:
+        value="Odd"
+    return value
+    
+calculate_vectorized=np.vectorize(calculate)
+result = calculate_vectorized(level)
+
+print(result)
+
+
+# Answer: [['Odd' 'Even' 'Odd']
+#         ['Even' 'Odd' 'Even']
+#         ['Odd' 'Even' 'Odd']]
