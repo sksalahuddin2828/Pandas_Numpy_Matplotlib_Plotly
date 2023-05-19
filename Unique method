@@ -1,0 +1,9 @@
+import numpy as np 
+
+my_list = ["A","B","A","C","B","A","B","C"]
+
+uniqueList, counts = np.unique(my_list, return_counts=True)
+
+print(uniqueList, counts)
+
+# Answer: ['A' 'B' 'C'] [3 3 2]
