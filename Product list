@@ -1,0 +1,16 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+products = ["Coca Cola", "Fanta", "Pepsi", "7UP"]
+price = [120, 110, 100, 130]  # Changed the price values to integers for plotting
+
+product = {'Product': products, 'Price': price}
+
+df = pd.DataFrame(product)
+
+# Plotting
+plt.bar(df['Product'], df['Price'])
+plt.xlabel('Product')
+plt.ylabel('Price')
+plt.title('Product Prices')
+plt.show()
