@@ -55,5 +55,10 @@ for i in range(len(projected_vertices)):
                 [projected_vertices[i, 1], projected_vertices[j, 1]],
                 [projected_vertices[i, 2], projected_vertices[j, 2]], 'k--', alpha=0.3)
 
+# Add a title and description
+ax.set_title('3D Projection of a Tesseract (4D Hypercube)')
+ax.text2D(0.05, 0.95, 'A tesseract is a 4D hypercube represented in 3D space using projection.\n'
+                      'The color coding represents the 5th dimension.', transform=ax.transAxes, fontsize=10)
+
 # Display the plot
 plt.show()
