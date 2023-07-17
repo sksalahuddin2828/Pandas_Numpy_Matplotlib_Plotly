@@ -1,3 +1,5 @@
+# Interactive 7D Data Visualization with Logical Clustering and Mathematical Annotations.
+
 import numpy as np
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
