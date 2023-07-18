@@ -23,7 +23,7 @@ data_sizes = np.sum(data_7d[:, 0:3], axis=1)  # Use dimensions 1, 2, and 3 for s
 
 # Create the interactive 3D plot with larger figure size
 fig = make_subplots(rows=1, cols=1, specs=[[{'type': 'scatter3d'}]], print_grid=False)
-fig.update_layout(width=600, height=600)  # Adjust the figure size here
+fig.update_layout(width=800, height=800)  # Adjust the figure size here
 
 # Add data points to the 3D plot
 for i in range(num_samples):
