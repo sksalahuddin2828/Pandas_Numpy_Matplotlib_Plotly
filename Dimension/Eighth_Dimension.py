@@ -308,3 +308,13 @@ cbar.set_label('Eighth Dimension')
 
 # Display the plot
 plt.show()
+
+
+#-----------------------------------------------------------------------------------------------------------------------------
+#-------------------To run the code and visualize the hypercube, you can add the following lines at the end-------------------
+
+
+# fig = plt.figure()
+# ax = fig.add_subplot(111, projection='3d')
+# ax.scatter(vertices[:, 0], vertices[:, 1], vertices[:, 2])
+# plt.show()
