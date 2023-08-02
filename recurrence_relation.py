@@ -18,3 +18,7 @@ C1_value, C2_value = sp.solve([a0_condition - 0, a1_condition - 1], (C1, C2))
 
 particular_solution = C1_value * roots[0]**r + C2_value * roots[1]**r
 print("Particular solution:", particular_solution)
+
+
+# Answer: Roots of the characteristic equation: [1/2, 2]
+#         Particular solution: 2**r*C2 + C1/2**r
